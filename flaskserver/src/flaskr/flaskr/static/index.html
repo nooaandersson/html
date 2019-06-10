@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>test page</title>
+    <script>
+        function hello() {
+            var e = document.getElementById("text").innerHTML;
+            if (e == "hej") {
+                document.getElementById("text").innerHTML = "welcome";
+            }      
+        }   
+        function StringSearch() {
+            var SearchTerm = document.getElementById("text_box_1").value;
+            var TextSearch = document.getElementById("text_area_3").value;
+
+            if (SearchTerm.length > 0 && TextSearch.indexOf(SearchTerm) > -1) {
+                alert("String Found. Search Complete");
+            } if (SearchTerm == "hej") {
+                alert("jepp");
+            } 
+            
+            
+            else {
+                alert("No Data found in Text Area");
+            }
+        }
+    
+    
+    
+    </script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <button id="b" onclick="hello()"> click when done</button>
+    <textarea name="insert awnser" id="text" cols="30" rows="1"></textarea>
+
+
+    <div id="requirement #2">
+            <h1>Requirement #2</h1>
+            <form>
+              Search For:
+              <input type="text" name="text_box_1" id="text_box_1">
+              <br>
+            </form>
+            <textarea id="text_area_3"></textarea>
+            <button type="button" id="button2" onclick="StringSearch()">Search</button>
+          </div>
+
+</body>
+
+
+
+
+</html>
